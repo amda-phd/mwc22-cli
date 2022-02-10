@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "es6",
+    "moduleResolution": "node",
+    "baseUrl": ".",
+    "paths": {
+      "Bin/*": ["./bin/*"],
+      "@index": ["./bin/index.js"],
+      "@pack": ["./package.json"]
+    }
+  },
+  "exclude": ["node_modules"]
+}

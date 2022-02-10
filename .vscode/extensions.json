@@ -1,0 +1,7 @@
+{
+  "recommendations": [
+    "wayou.vscode-todo-highlight",
+    "ryanluker.vscode-coverage-gutters",
+    "orta.vscode-jest"
+  ]
+}
