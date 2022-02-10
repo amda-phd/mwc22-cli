@@ -6,7 +6,10 @@
     "baseUrl": ".",
     "paths": {
       "Bin/*": ["./bin/*"],
+      "Models/*": ["./lib/models/*"],
+      "@app": ["./lib/app.js"],
       "@index": ["./bin/index.js"],
+      "@mongo": ["./lib/db/mongo.js"],
       "@pack": ["./package.json"]
     }
   },
