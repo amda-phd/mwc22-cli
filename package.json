@@ -1,7 +1,7 @@
 {
   "name": "mwc22-cli",
   "version": "0.1.0",
-  "description": "A CLI to connect the MWC22 with MongoDB",
+  "description": "Access all the MWC22 participants' information from your shell",
   "main": "index.js",
   "scripts": {
     "lint": "eslint . --ext .js",
@@ -43,11 +43,18 @@
   "dependencies": {
     "chalk": "^4.1.2",
     "commander": "^9.0.0",
-    "module-alias": "^2.2.2"
+    "lodash": "^4.17.21",
+    "module-alias": "^2.2.2",
+    "moment": "^2.29.1",
+    "mongoose": "^6.2.1",
+    "validator": "^13.7.0"
   },
   "_moduleAliases": {
     "Bin": "bin",
+    "Models": "lib/models",
+    "@app": "lib/app.js",
     "@index": "bin/index.js",
+    "@mongo": "lib/db/mongo.js",
     "@pack": "package.json"
   },
   "nodemonConfig": {
