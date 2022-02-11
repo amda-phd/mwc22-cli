@@ -51,8 +51,11 @@
   },
   "_moduleAliases": {
     "Bin": "bin",
+    "Func": "lib/functions",
     "Models": "lib/models",
     "@app": "lib/app.js",
+    "@cli": "lib/interfaces/cli.js",
+    "@config": "config.json",
     "@index": "bin/index.js",
     "@mongo": "lib/db/mongo.js",
     "@pack": "package.json"

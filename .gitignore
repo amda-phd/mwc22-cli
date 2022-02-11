@@ -1,3 +1,5 @@
 node_modules
 todo.md
 coverage
+*.env
+config.json

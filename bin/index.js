@@ -1,19 +1,8 @@
 #!/usr/bin/env node
 
 require("module-alias/register");
-const { program } = require("commander");
-const chalk = require("chalk");
-const { log } = console;
+require("@mongo");
 
-const { version, description, name } = require("@pack");
+const program = require("@cli");
 
-program
-  .name(name)
-  .description(description)
-  .version(version)
-  .option("-v0, --initialVelocity <velocity>")
-  .parse();
-
-log(chalk.blue("Hello World!"));
-const options = program.opts();
-if (options.initialVelocity) console.log(options.initialVelocity);
+program.parse();
