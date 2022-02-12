@@ -1,6 +1,6 @@
 {
   "name": "mwc22-cli",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "description": "Access all the MWC22 participants' information from your shell",
   "main": "index.js",
   "scripts": {
