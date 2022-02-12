@@ -23,7 +23,7 @@
       "name": "Program",
       "skipFiles": ["<node_internals>/**"],
       "cwd": "${workspaceFolder}",
-      "runtimeArgs": ["./bin/index.js"],
+      "runtimeArgs": ["./bin/index.js", "importJSON", "mwc22.json"],
       "console": "integratedTerminal"
     }
   ]
