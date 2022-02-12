@@ -6,7 +6,7 @@ const developer0 = {
   _id: new mongoose.Types.ObjectId(),
   name: "Tester0",
   email: "teste0@test.com",
-  phone: "275-2389-89",
+  phone: "+34678057940",
   category: "Front",
   dates: ["2022-02-28", "2022-03-01"],
 };
@@ -14,7 +14,7 @@ const developer0 = {
 const developer1 = {
   name: "Tester1",
   email: "teste1@test.com",
-  phone: "275-2389-89",
+  phone: "+34678057940",
   category: "Front",
   dates: ["2022-02-28", "2022-03-03"],
 };
@@ -22,7 +22,7 @@ const developer1 = {
 const developers = [developer0, developer1];
 
 const setupDatabase = async () => {
-  require("@mongo");
+  // require("@mongo");
   await Developer.deleteMany();
   await Developer.create(developer0);
 };

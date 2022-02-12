@@ -3,7 +3,7 @@ const debug = process.env === "true";
 module.exports = {
   verbose: true,
   collectCoverage: !debug,
-  collectCoverageFrom: ["bin/*.js", "!**/node_modules/**"],
+  collectCoverageFrom: ["lib/**/*.js", "!**/node_modules/**"],
   coverageThreshold: {
     global: {
       branches: 80,
