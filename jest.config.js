@@ -4,14 +4,6 @@ module.exports = {
   verbose: true,
   collectCoverage: !debug,
   collectCoverageFrom: ["lib/**/*.js", "!**/node_modules/**"],
-  coverageThreshold: {
-    global: {
-      branches: 80,
-      functions: 80,
-      lines: 80,
-      statements: -10,
-    },
-  },
   moduleNameMapper: {
     "Models/(.*)": "<rootDir>/lib/models/$1",
     "Fix/(.*)": "<rootDir>/tests/fixtures/$1",

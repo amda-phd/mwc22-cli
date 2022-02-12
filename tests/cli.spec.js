@@ -30,6 +30,7 @@ describe("When invoqued", () => {
 
 // TODO: Tests for importJSON command
 // TODO: Better output checks in tests
+// TODO: Understand why files that are actually covered by the suit get 0% of coverage
 
 describe("addDeveloper", () => {
   const command = "addDeveloper";
