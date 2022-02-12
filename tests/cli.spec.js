@@ -1,14 +1,14 @@
-require("@mongo");
 const path = require("path");
 const { spawnSync } = require("child_process");
 
 const { description, name } = require("@pack");
 const Developer = require("Models/developer");
-const { developers, setupDatabase } = require("Fix/db");
+const { developers, setupDatabase, turnOffDatabase } = require("Fix/db");
 
 const appFilePath = path.join(__dirname, "../bin/index.js");
 
 beforeEach(setupDatabase);
+afterAll(turnOffDatabase);
 
 describe("When invoqued", () => {
   describe("Without any options", () => {
@@ -27,6 +27,9 @@ describe("When invoqued", () => {
     });
   });
 });
+
+// TODO: Tests for importJSON command
+// TODO: Better output checks in tests
 
 describe("addDeveloper", () => {
   const command = "addDeveloper";
