@@ -86,4 +86,4 @@ When attempting to **import users from a JSON file** (command `importJSON`), the
 
 ## Project / task specific remarks
 - A JSON file containing an array of developers to be added to the database was provided. But the dates contained in it were a little confusing, as they clearly corresponded to the 2021 edition of MWC. As a result, the package has been adapted to record dates between 2021-02-28 and 2021-03-03, which is a little confusing, as the requirements seemed to imply that the date limits were expected to correspond to 2022.
-- A list of future features that would improve the project if implemented can be found in the [todo.md](https://github.com/amda-phd/hackaton-4YFN/todo.md) file.
+- A list of future features that would improve the project if implemented can be found in the [todo.md](https://github.com/amda-phd/mwc22-cli/todo.md) file.
